@@ -1,0 +1,29 @@
+general {
+  colors = true
+  color_good = "#BBBBBB"
+  color_bad = "#CC1616"
+  color_degraded = "#55858E"
+  interval = 2
+}
+
+order += "ethernet enp0s20u1u2"
+order += "wireless wlp3s0"
+order += "tztime local"
+
+cpu_usage {
+  format = "%usage "
+}
+
+wireless wlp3s0 {
+  format_up = " W: (%quality at %essid) %ip "
+  format_down = ""
+}
+
+ethernet enp0s20u1u2 {
+  format_up =  " ­ %ip "
+  format_down = "eth down"
+}
+
+tztime local {
+  format = " %d/%m/%Y %I:%M %p"
+}
