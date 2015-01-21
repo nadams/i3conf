@@ -30,10 +30,8 @@ for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="Orage"] floating enable
 
-exec --no-startup-id xfsettingsd
 exec --no-startup-id xsetroot -solid "#262626"
-exec --no-startup-id nm-applet
-exec --no-startup-id orage
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/nadams/.i3/workspace-1.json'"
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -183,3 +181,4 @@ client.focused #262626 #262626 #aaaaaa #A9C7DE
 client.focused_inactive #333333 #555555 #bbbbbb #484e50
 client.unfocused #333333 #333333 #888888 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
+

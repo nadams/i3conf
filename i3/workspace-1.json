@@ -1,0 +1,102 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.430390492359932,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1156,
+                       "width": 502,
+                       "x": 2240,
+                       "y": 1220
+                    },
+                    "name": "HipChat",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                           "class": "^HipChat$",
+                           "instance": "^hipchat$",
+                           "title": "^HipChat$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 502,
+                       "width": 917,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "nadams@manjaro:~",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                           "class": "^HipChat$",
+                           "instance": "^hipchat$",
+                           "title": "^HipChat$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 622,
+               "width": 950,
+               "x": 962,
+               "y": 1735
+            },
+            "name": "Quassel IRC",
+            "percent": 0.569609507640068,
+            "swallows": [
+               {
+                   "class": "^Quasselclient$",
+                   "instance": "^quasselclient$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1157,
+       "width": 956,
+       "x": 1922,
+       "y": 1241
+    },
+    "name": "Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+           "class": "^Google\\-chrome\\-stable$",
+           "instance": "^Google\\-chrome\\-stable$",
+           "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
