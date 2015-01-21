@@ -28,10 +28,12 @@ for_window [class="Xfce4-notifyd"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
+for_window [class="Orage"] floating enable
 
 exec --no-startup-id xfsettingsd
 exec --no-startup-id xsetroot -solid "#262626"
 exec --no-startup-id nm-applet
+exec --no-startup-id orage
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
