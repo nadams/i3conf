@@ -168,6 +168,7 @@ bindsym $mod+p mode "resize"
 bar {
   position bottom
   status_command i3status
+  tray_output eDP1
   colors {
     separator #666666
     background #262626
