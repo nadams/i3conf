@@ -31,6 +31,7 @@ for_window [class="Pidgin"] floating enable
 for_window [class="Orage"] floating enable
 for_window [class="Pamac-updater"] floating enable
 for_window [class="Google-chrome-stable" window_role="pop-up"] floating enable
+for_window [class="Firefox" window_role="About"] floating enable
 
 exec --no-startup-id xsetroot -solid "#262626"
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/nadams/.i3/workspace-1.json'"
