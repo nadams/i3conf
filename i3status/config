@@ -22,7 +22,7 @@ wireless wlp3s0 {
 
 ethernet enp0s20u1u2 {
   format_up =  " ­ %ip "
-  format_down = "eth down"
+  format_down = " eth down "
 }
 
 tztime local {
