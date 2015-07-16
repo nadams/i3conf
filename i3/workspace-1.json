@@ -92,9 +92,8 @@
     "percent": 0.5,
     "swallows": [
        {
-           "class": "^Google\\-chrome\\-stable$",
-           "instance": "^Google\\-chrome\\-stable$",
-           "window_role": "^browser$"
+           "class": "^evolution$",
+           "instance": "^evolution$"
        }
     ],
     "type": "con"
