@@ -31,7 +31,7 @@ for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="Orage"] floating enable
 for_window [class="Pamac-updater"] floating enable
-for_window [class="Google-chrome-stable" window_role="pop-up"] floating enable
+for_window [class="Google-chrome" window_role="pop-up"] floating enable
 for_window [class="Firefox" window_role="About"] floating enable
 
 exec --no-startup-id xsetroot -solid "#262626"
@@ -68,11 +68,21 @@ bindsym $mod+e focus down
 bindsym $mod+i focus up
 bindsym $mod+o focus right
 
+bindsym $mod+Shift+n focus output left
+bindsym $mod+Shift+e focus output down
+bindsym $mod+Shift+i focus output up
+bindsym $mod+Shift+o focus output right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+bindsym $mod+Shift+Left focus output left
+bindsym $mod+Shift+Down focus output down
+bindsym $mod+Shift+Up focus output up
+bindsym $mod+Shift+Right focus output right
 
 # move focused window
 bindsym $mod+Shift+n move left
@@ -85,6 +95,17 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# move workspace to output
+bindsym $mod+Ctrl+n move workspace to output left
+bindsym $mod+Ctrl+e move workspace to output down
+bindsym $mod+Ctrl+i move workspace to output up
+bindsym $mod+Ctrl+o move workspace to output right
+
+bindsym $mod+Ctrl+Left move workspace to output left
+bindsym $mod+Ctrl+Down move workspace to output down
+bindsym $mod+Ctrl+Up move workspace to output up
+bindsym $mod+Ctrl+Right move workspace to output right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -108,6 +129,7 @@ bindsym $mod+Shift+space floating toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+bindsym $mod+Shift+a focus child
 
 # focus the child container
 #bindsym $mod+d focus child
