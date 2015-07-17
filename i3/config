@@ -68,10 +68,10 @@ bindsym $mod+e focus down
 bindsym $mod+i focus up
 bindsym $mod+o focus right
 
-bindsym $mod+Shift+n focus output left
-bindsym $mod+Shift+e focus output down
-bindsym $mod+Shift+i focus output up
-bindsym $mod+Shift+o focus output right
+bindsym $mod+Ctrl+Shift+n focus output left
+bindsym $mod+Ctrl+Shift+e focus output down
+bindsym $mod+Ctrl+Shift+i focus output up
+bindsym $mod+Ctrl+Shift+o focus output right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -79,10 +79,10 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-bindsym $mod+Shift+Left focus output left
-bindsym $mod+Shift+Down focus output down
-bindsym $mod+Shift+Up focus output up
-bindsym $mod+Shift+Right focus output right
+bindsym $mod+Ctrl+Shift+Left focus output left
+bindsym $mod+Ctrl+Shift+Down focus output down
+bindsym $mod+Ctrl+Shift+Up focus output up
+bindsym $mod+Ctrl+Shift+Right focus output right
 
 # move focused window
 bindsym $mod+Shift+n move left
