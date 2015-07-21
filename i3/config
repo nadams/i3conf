@@ -61,6 +61,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+space exec --no-startup-id rofi -show run -bg "#262626" -bg-active "#363636" -bg-urgent "#404040" -bgalt "#303030" -bc "#505050" -fg "#dddddd" -fg-active "#ffffff" -fg-urgent "#eeeeee" -no-disable-history -no-levenshtein-sort
 
 bindsym $mod+q exec thunar
+bindsym $mod+c exec --no-startup-id gsimplecal
 
 # change focus
 bindsym $mod+n focus left
