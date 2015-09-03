@@ -36,6 +36,8 @@ for_window [class="Firefox" window_role="About"] floating enable
 
 exec --no-startup-id xsetroot -solid "#262626"
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/nadams/.i3/workspace-1.json'"
+exec killall -q notify-osd
+exec --no-startup-id dunst # -config ~/.i3/dunst
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -58,7 +60,7 @@ bindsym $mod+Shift+q kill
 # installed.
 #bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 #bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn 'DejaVu Sans Mono-11'"
-bindsym $mod+space exec --no-startup-id rofi -show run -bg "#262626" -bg-active "#363636" -bg-urgent "#404040" -bgalt "#303030" -bc "#505050" -fg "#dddddd" -fg-active "#ffffff" -fg-urgent "#eeeeee" -no-disable-history -no-levenshtein-sort
+bindsym $mod+space exec --no-startup-id source ~/.xprofile && ~/.local/bin/rofi.sh
 
 bindsym $mod+q exec thunar
 bindsym $mod+c exec --no-startup-id gsimplecal
